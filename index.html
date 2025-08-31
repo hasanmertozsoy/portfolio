@@ -1,0 +1,233 @@
+<div> 
+<style>
+/* GENEL STİLLER VE AÇIK TEMA (VARSAYILAN) */
+.gh-profile-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #24292f;
+    max-width: 1200px;
+    margin: auto;
+}
+.gh-profile-container .header { 
+    text-align: center; 
+    margin-bottom: 2.5rem; 
+    padding: 0 1rem;
+}
+.gh-profile-container .name { 
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 0.5rem; 
+    letter-spacing: 0.5px; 
+    word-break: break-word;
+}
+.gh-profile-container .subtitle { 
+    font-size: 1rem; 
+    color: #57606a; 
+    margin-bottom: 1rem; 
+}
+.gh-profile-container .bio { 
+    max-width: 600px; 
+    margin: auto; 
+    line-height: 1.6; 
+    font-size: 0.95rem; 
+    padding: 0 0.5rem;
+}
+
+.gh-profile-container .grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1.25rem; 
+}
+.gh-profile-container .card { 
+    background-color: #f6f8fa; 
+    border: 1px solid #d0d7de; 
+    border-radius: 12px; 
+    padding: 1.25rem; 
+}
+.gh-profile-container .card-title { 
+    font-size: 1.15rem; 
+    font-weight: 600; 
+    border-bottom: 1px solid #d0d7de; 
+    padding-bottom: 0.5rem; 
+    margin-bottom: 1rem; 
+    line-height: 1.3;
+}
+.gh-profile-container .tech-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+}
+@media (min-width: 640px) {
+    .gh-profile-container .tech-grid { grid-template-columns: 1fr 1fr; }
+}
+.gh-profile-container .tech-grid h3 { 
+    font-weight: 600; 
+    margin-bottom: 0.5rem; 
+    font-size: 1rem; 
+}
+.gh-profile-container ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    color: #57606a; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.4rem; 
+    font-size: 0.95rem; 
+}
+.gh-profile-container .interests-list { 
+    list-style-type: '» '; 
+    padding-left: 1rem; 
+    gap: 0.6rem; 
+}
+.gh-profile-container .card-full-width { grid-column: 1 / -1; }
+
+.gh-profile-container .stats-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+    align-items: center; 
+}
+@media (min-width: 768px) {
+    .gh-profile-container .stats-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    }
+}
+.gh-profile-container .stats-img { 
+    width: 100%; 
+    border-radius: 8px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.gh-profile-container .contact-links { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    align-items: center; 
+}
+.gh-profile-container .contact-links a { 
+    color: #57606a; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    transition: color 0.3s; 
+    font-size: 0.95rem;
+}
+.gh-profile-container .contact-links a:hover { color: #24292f; }
+
+.gh-profile-container .footer { 
+    text-align: center; 
+    margin-top: 2.5rem; 
+    padding-top: 1.25rem; 
+    border-top: 1px solid #d0d7de; 
+}
+.gh-profile-container .footer p { 
+    font-style: italic; 
+    color: #57606a; 
+    font-size: 0.9rem; 
+    padding: 0 1rem;
+}
+
+/* KOYU TEMA AYARLARI */
+@media (prefers-color-scheme: dark) {
+    .gh-profile-container { background-color: #0d1117; color: #c9d1d9; }
+    .gh-profile-container .subtitle, 
+    .gh-profile-container ul, 
+    .gh-profile-container .contact-links a { color: #8b949e; }
+    .gh-profile-container .card { background-color: #161b22; border: 1px solid #30363d; }
+    .gh-profile-container .card-title { border-bottom: 1px solid #30363d; }
+    .gh-profile-container .contact-links a:hover { color: #c9d1d9; }
+    .gh-profile-container .footer { border-top: 1px solid #30363d; }
+    .gh-profile-container .footer p { color: #8b949e; }
+}
+</style>
+
+<div class="gh-profile-container">
+
+    <!-- BAŞLIK VE GİRİŞ -->
+    <div class="header">
+        <h1 class="name">H. Mert Özsoy</h1>
+        <p class="subtitle">Senior Computer Engineering Student</p>
+        <p class="bio">Web geliştirme, yapay zeka entegrasyonları ve bulut teknolojileri üzerine tutkuyla çalışan bir mühendis adayıyım.</p>
+    </div>
+
+    <!-- ANA GRID YAPISI -->
+    <div class="grid-container">
+
+        <!-- TEKNOLOJİLER KARTI -->
+        <div class="card">
+            <h2 class="card-title">💻 Teknolojiler</h2>
+            <div class="tech-grid">
+                <div>
+                    <h3>Frontend</h3>
+                    <ul><li>HTML5 & CSS3</li><li>JavaScript</li><li>Java Swing</li></ul>
+                </div>
+                <div>
+                    <h3>Backend & Veritabanı</h3>
+                    <ul><li>Java</li><li>Node.js & Express</li><li>MongoDB & PostgreSQL</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- İLGİ ALANLARI VE HEDEFLER KARTI -->
+        <div class="card">
+            <h2 class="card-title">💡 İlgi Alanları & Hedefler</h2>
+            <ul class="interests-list">
+                <li>Full-stack geliştirme ve AI tabanlı uygulamalar</li>
+                <li>Siber güvenlik ve ölçeklenebilir bulut sistemleri</li>
+                <li>Açık kaynak projelerine katkıda bulunmak</li>
+                <li>Web alanında 2025 yazı için staj imkanı bulmak</li>
+            </ul>
+        </div>
+
+        <!-- GITHUB İSTATİSTİKLERİ KARTI -->
+        <div class="card card-full-width">
+            <h2 class="card-title">📊 GitHub İstatistikleri</h2>
+            <div class="stats-grid">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=hasanmertozsoy&show_icons=true&theme=tokyonight&bg_color=161b22&hide_border=true&title_color=c9d1d9&text_color=8b949e&icon_color=79d2ff">
+                    <img src="https://github-readme-stats.vercel.app/api?username=hasanmertozsoy&show_icons=true&theme=default&bg_color=f6f8fa&hide_border=true&title_color=24292f&text_color=57606a&icon_color=0969da" alt="GitHub Stats" class="stats-img" />
+                </picture>
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=hasanmertozsoy&layout=compact&theme=tokyonight&bg_color=161b22&hide_border=true&title_color=c9d1d9&text_color=8b949e">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hasanmertozsoy&layout=compact&theme=default&bg_color=f6f8fa&hide_border=true&title_color=24292f&text_color=57606a" alt="Top Languages" class="stats-img" />
+                </picture>
+            </div>
+        </div>
+
+        <!-- ÖNE ÇIKAN PROJE KARTI -->
+        <div class="card">
+            <h2 class="card-title">📌 Öne Çıkan Proje</h2>
+            <a href="https://github.com/hasanmertozsoy/supermarket" target="_blank">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=hasanmertozsoy&repo=supermarket&theme=tokyonight&bg_color=161b22&hide_border=true&title_color=c9d1d9&text_color=8b949e">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=hasanmertozsoy&repo=supermarket&theme=default&bg_color=f6f8fa&hide_border=true&title_color=24292f&text_color=57606a" alt="Supermarket App" style="width: 100%;" />
+                </picture>
+            </a>
+        </div>
+        
+        <!-- İLETİŞİM KARTI -->
+        <div class="card">
+            <h2 class="card-title">📫 Bana Ulaşın</h2>
+            <div class="contact-links">
+                <a href="mailto:hasanmertozsoy@gmail.com">
+                    📧 Email
+                </a>
+                <a href="https://linkedin.com/in/hasanmertozsoy" target="_blank">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- ALT BİLGİ -->
+    <div class="footer">
+        <p>✨ Always curious. Always building. Always learning. ✨</p>
+    </div>
+
+</div>
+</div>
