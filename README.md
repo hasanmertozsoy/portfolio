@@ -1,6 +1,6 @@
 # H. Mert Ozsoy | Personal Portfolio
 
-This repository hosts the source code for my personal portfolio website. It serves as a digital resume showcasing my academic background, technical skills, and project portfolio as a **Senior Computer Engineering Student**.
+This repository hosts the source code for my personal portfolio website. It serves as a digital resume showcasing my academic background, technical skills, and project portfolio.
 
 ##  About Me
 I am an engineering student passionate about **web development, artificial intelligence integrations, and cloud technologies**. This portfolio demonstrates my proficiency in building scalable systems and my contributions to open-source projects.
